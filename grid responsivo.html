@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .celula {
+            background-color: red;
+        }
+
+        .galeria {
+            display: grid;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .galeria {
+                grid-template-columns: 1fr 1fr;
+            }
+                 .celula {
+            background-color: blue;
+        }   
+        }
+        h1 { font-size: clamp(2rem, 5vw, 4rem); }
+    </style>
+</head>
+
+<body>
+    <section class="galeria">
+        <section class="celula">A</section>
+        <section class="celula">B</section>
+        <section class="celula">C</section>
+        <section class="celula">D</section>
+    </section>
+    <h1>Teste</h1>
+</body>
+
+</html>
